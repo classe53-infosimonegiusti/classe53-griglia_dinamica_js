@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #011627;
+}
+
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    border: solid 1px #fff;
+}
+
+#grid {
+    height: 500px;
+}
+
+#grid::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.square {
+    border: solid 1px #fff;
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    float: left;
+}
+
+.clicked {
+    background-color: aquamarine;
+}
